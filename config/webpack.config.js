@@ -198,6 +198,11 @@ module.exports = {
                     name: "vue-chunk",
                     priority: 30
                 },
+                "ant-design-vue": {
+                    test: /[\\/]node_modules[\\/]ant-design-vue(.*)?[\\/]/,
+                    name: "ant-design-vue-chunk",
+                    priority: 20
+                },
                 // elementPlus: {
                 //     test: /[\\/]node_modules[\\/]element-plus(.*)?[\\/]/,
                 //     name: "elementPlus-chunk",
