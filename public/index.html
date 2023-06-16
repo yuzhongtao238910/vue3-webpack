@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<% if (htmlWebpackPlugin.options.cdnTag && htmlWebpackPlugin.options.cdnTag.css) { %>
+  		<% for (var i in htmlWebpackPlugin.options.cdnTag.css) { %>
+    		<link href="<%= htmlWebpackPlugin.options.cdnTag.css[i] %>" rel="stylesheet" />
+  		<% } %>
+	<% } %>
+
+	<% if (htmlWebpackPlugin.options.cdnTag && htmlWebpackPlugin.options.cdnTag.js) { %>
+  		<% for (var i in htmlWebpackPlugin.options.cdnTag.js) { %>
+    		<script src="<%= htmlWebpackPlugin.options.cdnTag.js[i] %>"></script>
+  		<% } %>
+	<% } %>
+	<link rel="icon" href="./favicon.ico">
+</head>
+<body>
+	<div id="app"></div>
+</body>
+</html>
