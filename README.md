@@ -30,6 +30,7 @@
 - svg格式图片使用了两种配置，一种是配置普通的svg，使用svg-loader进行压缩，还有一种是svg精灵图，svg精灵图的所有文件需要放在icons文件夹里面，
 - 该版本为js版本
 - 生产版本默认配置了cdn链接，包含vue3，vue-router，element-plus，element-plus在这里使用的是自动导入，其中关于主题的配置文件在src文件夹下面的styles/element/index.scss，我是按照element-plus官方进行配置的
+- 使用前需要 npx husky install
 
 
 
